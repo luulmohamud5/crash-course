@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+    <h1>Event Registration</h1>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required >
+
+        <br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required >
+
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+252 61 2345678" required >
+
+        <br><br>
+
+        <label for="event-date">Preferred Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required >
+
+        <br><br>
+
+            <legend>Choose Ticket Type:</legend>
+
+            <input type="radio" id="general" name="ticket" value="general" required >
+            <label for="general">General</label>
+
+            <br>
+
+            <input  type="radio" id="vip"  name="ticket" value="vip" >
+            <label for="vip">VIP</label>
+
+        <br>
+
+        <input  type="checkbox"  id="terms" name="terms" required >
+        <label for="terms"> I agree to the terms and conditions. </label>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
