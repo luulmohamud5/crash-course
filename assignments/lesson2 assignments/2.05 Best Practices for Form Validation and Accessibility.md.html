@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Feedback Form</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>Website Feedback</h1>
+
+    <p id="form-introduction">
+       Please complete the form below to tell us about your experience.
+       Fields marked with * are required.
+        </p>
+
+  <form action="#" method="post" aria-describedby="form-introduction">
+
+     <div>
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required aria-required="true" aria-describedby="name-help" >
+
+            </div>
+
+            <br>
+
+     <div>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder=" Enter your email address, for example: name@example.com." autocomplete="email" required aria-required="true" aria-describedby="email-help">
+
+            </div>
+
+            <br>
+
+     <div>
+        <label for="password">Password *</label>
+       <input type="password" id="password" name="password" placeholder="Enter at least 8 characters" autocomplete="new-password" minlength="8" required aria-required="true" aria-describedby="password-help" >
+
+            </div>
+
+            <br>
+
+ <fieldset>
+    <legend>How satisfied are you with our website? *</legend>
+
+    <div>
+         <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied" required >
+         <label for="very-satisfied">Very Satisfied</label>
+                </div>
+
+    <div>
+      <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+        <label for="satisfied">Satisfied</label>
+                </div>
+
+    <div>
+      <input type="radio" id="neutral" name="satisfaction" value="neutral">
+         <label for="neutral">Neutral</label>
+                </div>
+
+    <div>
+      <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+         <label for="dissatisfied">Dissatisfied</label>
+                </div>
+
+    <div>
+     <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied" >
+        <label for="very-dissatisfied">Very Dissatisfied</label>
+                </div>
+            </fieldset>
+
+            <br>
+
+    <div>
+     <label for="comments">Comments *</label>
+     <textarea id="comments" name="comments" placeholder="Tell us what you liked or what we could improve." rows="6" required aria-required="true" aria-describedby="comments-help" ></textarea>
+
+            </div>
+
+            <br>
+
+      <button type="submit">Submit Feedback</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
